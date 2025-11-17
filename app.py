@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import joblib
 model = joblib.load("model.joblib")
-st.title("Customer Satisfication")
+st.title("Customer Satisfaction")
 st.write("Enter the metrics to predict customer satisfaction")
 
 order_price = st.number_input("order price", min_value=585,max_value=35180,step=1)

@@ -14,4 +14,4 @@ distance_to_nearest_warehouse = st.number_input("distance_to_nearest_warehouse",
 if st.button("Predict"):
   features = np.array([[order_price, delivery_charges, customer_long,coupon_discount,order_total, distance_to_nearest_warehouse]])
   prediction = model.predict(features)[0]
-  st.success(f"🌼 Predicted: {prediction}")
+  st.success(f" Predicted: {prediction}")

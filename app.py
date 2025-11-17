@@ -3,7 +3,7 @@ import numpy as np
 import joblib
 model = joblib.load("model.joblib")
 st.title("Customer Satisfication")
-st.write("Enter the metrics to classify customer satisfaction")
+st.write("Enter the metrics to predict customer satisfaction")
 
 order_price = st.number_input("order price", min_value=585,max_value=35180,step=1)
 delivery_charges  = st.number_input("deliverycharges", min_value=46.35, max_value=107.58,step=0.1)
